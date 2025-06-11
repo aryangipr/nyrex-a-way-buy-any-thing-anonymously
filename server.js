@@ -17,13 +17,13 @@ app.post("/send-data", async (req, res) => {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: "arystark498@gmail.com",
-      pass: "⚠️ yaha tumhara app password daalna hai" // example: qogs wggb pynr bjys
+      user: process.env.EMAIL_USER, // Store email in environment variable
+      pass: process.env.EMAIL_PASS  // Store app password in environment variable
     }
   });
 
   const mailOptions = {
-    from: "arystark498@gmail.com",
+    from: process.env.EMAIL_USER,
     to: email,
     subject: "Your Data Purchase",
     text: "Thank you for your purchase. Data is attached.",
