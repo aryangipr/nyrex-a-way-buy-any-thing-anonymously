@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+label, select, button {
+  font-size: 16px;
+}
+button {
+  padding: 8px 16px;
+  background-color: #3399cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anonymous Data Purchase</title>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+  <h2>Buy Data Anonymously</h2>
+  <label for="dataAmount">Select amount of data:</label>
+  <select id="dataAmount">
+    <option value="10">10 Units - ₹10</option>
+    <option value="50">50 Units - ₹40</option>
+  </select>
+  <br><br>
+  <button onclick="payNow()">Pay & Get Data</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
